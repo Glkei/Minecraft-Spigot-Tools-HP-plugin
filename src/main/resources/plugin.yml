@@ -1,0 +1,17 @@
+name: ToolsHP
+version: '${project.version}'
+main: toolshp.toolshp.ToolsHP
+api-version: 1.18
+prefix: ToolsHP
+authors: [ Ell ]
+
+commands:
+  #メッセージ送信
+  message:
+    description: 最初の挨拶メッセージ
+    aliases:
+      - msg
+
+  Timer:
+    description: 試合開始のタイマー
+    aliases: timer
