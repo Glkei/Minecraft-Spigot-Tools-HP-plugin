@@ -2,6 +2,7 @@ package toolshp.toolshp;
 
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
+import toolshp.toolshp.Commands.AllowFly;
 import toolshp.toolshp.Commands.countDown;
 import toolshp.toolshp.Commands.msg;
 
@@ -22,6 +23,8 @@ public final class ToolsHP extends JavaPlugin {
         getCommand("message").setExecutor(new msg());
 
         getCommand("Timer").setExecutor(new countDown());
+
+        getCommand("AllowFly").setExecutor(new AllowFly());
 
         super.onEnable();
     }
